@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 8 - JavaScript</title>
+</head>
+<body>
+
+    <form onsubmit="validar(); return false;">
+        Número: <input type="number" id="num" required>
+        <input type="submit" value="Validar">
+    </form>
+
+    <p id="res"></p>
+
+    <script>
+        function validar() {
+            let n = Number(document.getElementById("num").value);
+            if (n % 2 === 0) {
+                document.getElementById("res").innerText = "Es par";
+            } else {
+                document.getElementById("res").innerText = "Es impar";
+            }
+        }
+    </script>
+
+</body>
+</html>
