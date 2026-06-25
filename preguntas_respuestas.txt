@@ -1,0 +1,101 @@
+============================================================
+PREGUNTAS Y RESPUESTAS
+Proyecto: gurrola-ejercicios-php
+Fundamentos de Desarrollo Web - Facultad de Informatica Mazatlan
+============================================================
+
+1.  Que version de PHP se tiene que utilizar para poder hacer uso del
+    paradigma de programacion orientada a objetos?
+    R = PHP 5 y superiores. La POO fue introducida de forma limitada en PHP 4
+    y maduro completamente a partir de PHP 5.
+
+2.  Menciona cuales son las funciones utilizadas para la gestion de
+    conexion MySQL utilizando el paradigma de programacion orientada a
+    objetos:
+    R = new mysqli(), $conexion->connect_error, $conexion->query(),
+    $conexion->prepare(), $conexion->affected_rows, $conexion->close(),
+    $resultado->fetch_object(), $resultado->fetch_assoc(),
+    $resultado->fetch_array(), $resultado->num_rows.
+
+3.  Menciona cuales son las funciones utilizadas para la gestion de
+    conexion MySQL utilizando el estilo procedural:
+    R = mysqli_connect(), mysqli_connect_error(), mysqli_query(),
+    mysqli_fetch_assoc(), mysqli_fetch_array(), mysqli_fetch_object(),
+    mysqli_num_rows(), mysqli_affected_rows(), mysqli_real_escape_string(),
+    mysqli_close().
+
+4.  Son funciones de PHP que permiten abrir y cerrar conexion a DB:
+    R = mysqli_connect() para abrir la conexion y mysqli_close() para
+    cerrarla.
+
+5.  Son funciones de PHP que nos permiten la ejecucion de consultas SQL:
+    R = mysqli_query() para consultas generales y mysqli_prepare() para
+    consultas preparadas.
+
+6.  Son funciones de PHP que nos permiten la gestion de datos (fetch)
+    utilizando el procedimiento mysql:
+    R = mysqli_fetch_assoc(), mysqli_fetch_array(), mysqli_fetch_object(),
+    mysqli_fetch_row().
+
+7.  Tipo de dato que puede devolver la funcion mysql_fetch_array:
+    R = Un array numerico, un array asociativo, o ambos (MYSQLI_NUM,
+    MYSQLI_ASSOC, MYSQLI_BOTH).
+
+8.  Cual es el identificador que necesita la funcion mysql_fetch_array
+    para poder ejecutarse:
+    R = Necesita el resultado devuelto por mysqli_query(), es decir, un
+    objeto de tipo mysqli_result.
+
+9.  Funcion de PHP encargada de devolver el numero de registros afectados
+    o devueltos:
+    R = mysqli_affected_rows() para registros afectados por INSERT/UPDATE/
+    DELETE, y mysqli_num_rows() para el numero de filas en un resultado SELECT.
+
+10. Funcion de PHP que permite cerrar una consulta SQL:
+    R = mysqli_free_result() libera la memoria del resultado,
+    y mysqli_close() cierra la conexion a la base de datos.
+
+11. Funcion de PHP encargada de devolver el ultimo error ocurrido:
+    R = mysqli_error($conexion) devuelve el ultimo error de la conexion.
+
+12. Que es lo que realiza la funcion mysqli_real_escape_string():
+    R = Escapa caracteres especiales en una cadena para usarla de forma
+    segura en una consulta SQL, previniendo inyecciones SQL.
+
+13. Indica como se declara una variable en PHP:
+    R = Se declara con el signo $ seguido del nombre de la variable,
+    sin necesidad de especificar el tipo de dato. Ejemplo: $nombre = "Juan";
+
+14. Indica la funcion utilizada para la creacion de un arreglo en PHP:
+    R = array() o bien usando la sintaxis corta []. Ejemplo: $arr = array();
+    o $arr = [];
+
+15. Se utiliza para almacenar una coleccion de datos en PHP:
+    R = Un arreglo (array), que puede ser indexado, asociativo o
+    multidimensional.
+
+16. Indica como se imprime texto en pantalla utilizando PHP:
+    R = Con echo o print. Ejemplo: echo "Hola mundo"; o print "Hola mundo";
+
+17. Indica como se imprime texto y etiquetas de HTML en pantalla utilizando
+    PHP:
+    R = Con echo o print, incluyendo las etiquetas HTML dentro de las
+    comillas. Ejemplo: echo "<h1>Titulo</h1><p>Parrafo</p>";
+
+18. Indica como se imprime el detalle de una variable en pantalla,
+    especialmente de un arreglo, utilizando PHP:
+    R = Con print_r() o var_dump(). Ejemplo: print_r($arreglo);
+    var_dump($arreglo) muestra ademas el tipo de dato y longitud.
+
+19. Indica como se crea un comentario en PHP:
+    R = // para comentario de una linea, /* */ para comentario de varias
+    lineas, y # tambien para comentario de una linea.
+
+20. Indica la funcion utilizada para incluir el contenido de un archivo
+    PHP dentro de otro:
+    R = include(), include_once(), require(), require_once().
+    Ejemplo: include 'config.php';
+
+============================================================
+Elaborado por: Gurrola
+============================================================
